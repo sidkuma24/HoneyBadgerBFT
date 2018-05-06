@@ -20,7 +20,7 @@ RUN tar -xvf pbc-0.5.14.tar.gz
 RUN cd pbc-0.5.14 && ./configure && make && make install
 RUN git clone https://github.com/JHUISI/charm.git
 RUN cd charm && git checkout 2.7-dev && ./configure.sh && python setup.py install
-RUN git clone https://github.com/amiller/HoneyBadgerBFT.git
+RUN git clone https://github.com/sidkuma24/HoneyBadgerBFT.git
 RUN cd HoneyBadgerBFT && git checkout another-dev
 COPY ./start.sh /
 COPY ./start_multiple.sh /
